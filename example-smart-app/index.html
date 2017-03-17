@@ -76,7 +76,9 @@
         function(p) {
           drawVisualization(p);
 
-          window.setTimeout(function(){ window.location = "https://www.mindcell.no"; },3000);
+          var redirurl = "https://www.google.com?q=" + p.fname
+
+          window.setTimeout(function(){ window.location = redirurl; },3000);
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
